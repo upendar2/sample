@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sample</title>
+    <style>
+        .main{
+            height:500px;
+            width: 100%;
+            background-color: red;
+            position: relative;
+            overflow: hidden;
+        }
+        .t2 {
+            height: 100px;
+            width: 100px;
+            background-color:white;          
+            animation-name: hell;
+            transition: 2s;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            border-radius: 20%;
+            overflow: hidden;
+            position:absolute;
+            animation-direction:alternate;
+            animation-delay: 0.1s
+        }
+        @keyframes hell
+        {
+        0%{
+            transform: rotate(15deg);
+            left: 0;
+            transition: 5s;
+        }
+        10%{
+            transform: rotate(30deg);
+            left: 10%;
+        }
+        20%{
+            transform: rotate(45deg);
+            left: 20%;
+        }
+        30%{
+            transform: rotate(60deg);
+            left: 30%;
+        }
+        40%{
+            transform: rotate(75deg);
+            left: 40%;
+        }
+        50%{
+            left: 50%;
+            transform: rotate(90deg);
+        }
+        60%{
+            left: 60%;
+            transform: rotate(105deg);
+        }
+        70%{
+            left: 70%;
+            transform: rotate(120deg);
+        }
+        80%{
+            left: 80%;
+            transform: rotate(135deg);
+        }
+        90%{
+            left: 90%;
+            transform: rotate(150deg);
+        }
+        100%{
+            left: 100%;
+            transform: rotate(165deg);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="t2"></div>
+</div>
+</body>
+</html>
